@@ -1,23 +1,17 @@
-cat > /var/www/html/remark-test.html << 'EOF'
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Тест комментариев Remark42</title>
+    <title>Управление комментариями</title>
     <meta charset="utf-8">
 </head>
 <body>
-    <h1>Тестовая страница для комментариев</h1>
-    <p>Здесь будет блок комментариев Remark42.</p>
-    
+    <h1>Админ-панель Remark42</h1>
     <div id="remark42"></div>
-    
     <script>
         var remark_config = {
             host: "https://talk.soberdrive.ru",
             site_id: "soberdrive",
-            components: ["embed"],
-            max_shown_comments: 20,
-            theme: "light"
+            components: ["embed"]
         };
     </script>
     <script>
@@ -32,4 +26,3 @@ cat > /var/www/html/remark-test.html << 'EOF'
     </script>
 </body>
 </html>
-EOF
