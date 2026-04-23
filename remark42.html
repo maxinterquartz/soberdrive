@@ -1,0 +1,35 @@
+cat > /var/www/html/remark-test.html << 'EOF'
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Тест комментариев Remark42</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Тестовая страница для комментариев</h1>
+    <p>Здесь будет блок комментариев Remark42.</p>
+    
+    <div id="remark42"></div>
+    
+    <script>
+        var remark_config = {
+            host: "https://talk.soberdrive.ru",
+            site_id: "soberdrive",
+            components: ["embed"],
+            max_shown_comments: 20,
+            theme: "light"
+        };
+    </script>
+    <script>
+        !function(e,n){
+            for(var o=0;o<e.length;o++){
+                var r=n.createElement("script"),c=e[o];
+                r.src=c.host+"/web/"+c.component+".js",
+                r.async=!0,
+                n.head.appendChild(r)
+            }
+        }([{component:"embed",host:remark_config.host}],document);
+    </script>
+</body>
+</html>
+EOF
