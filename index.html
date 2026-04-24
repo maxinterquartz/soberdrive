@@ -231,6 +231,68 @@
             color: #a3c6e0;
         }
         
+        /* Блок форума */
+        .forum-block {
+            margin: 40px 0 30px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 24px;
+            border: 1px solid rgba(39, 167, 231, 0.2);
+            text-align: left;
+        }
+        
+        .forum-block h3 {
+            color: #27a7e7;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+        }
+        
+        .forum-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+        }
+        
+        .forum-list li {
+            margin: 12px 0;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(163, 198, 224, 0.1);
+        }
+        
+        .forum-list li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: 0.2s;
+            display: block;
+        }
+        
+        .forum-list li a:hover {
+            color: #27a7e7;
+            transform: translateX(5px);
+        }
+        
+        .forum-link {
+            display: inline-block;
+            padding: 10px 24px;
+            background: rgba(39, 167, 231, 0.15);
+            border: 1px solid #27a7e7;
+            border-radius: 30px;
+            color: #27a7e7;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: 0.2s;
+        }
+        
+        .forum-link:hover {
+            background: rgba(39, 167, 231, 0.3);
+            transform: translateY(-2px);
+        }
+        
         .kasco-link {
             display: inline-flex;
             align-items: center;
@@ -416,39 +478,54 @@
         </figure>
         
         <div class="steps">
-    <div class="step">
-        <div class="step-content">
-            <span class="num">1</span>
-            <div class="text">
-                <a href="https://soberdrive.ru" target="_blank">Заполните форму заказа</a>
+            <div class="step">
+                <div class="step-content">
+                    <span class="num">1</span>
+                    <div class="text">
+                        <a href="https://soberdrive.ru" target="_blank">Заполните форму заказа</a>
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-content">
+                    <span class="num">2</span>
+                    <div class="text">Выберите лучшую цену</div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-content">
+                    <span class="num">3</span>
+                    <div class="text">Свяжитесь с водителем</div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-content">
+                    <span class="num">4</span>
+                    <div class="text">
+                        Оформите 
+                        <a href="https://care.yandex.ru/maps-kasko" target="_blank" style="display: inline-flex; align-items: center; gap: 4px; background: rgba(252, 63, 29, 0.1); padding: 4px 10px; border-radius: 30px; border: 1px solid rgba(252, 63, 29, 0.3); text-decoration: none; color: white; margin: 0 2px;">
+                            <span style="display: inline-flex; align-items: center; justify-content: center; background: #FC3F1D; color: white; width: 20px; height: 20px; border-radius: 6px; font-weight: 700; font-size: 12px;">Я</span>
+                            <span>КАСКО</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="step">
-        <div class="step-content">
-            <span class="num">2</span>
-            <div class="text">Выберите лучшую цену</div>
-        </div>
-    </div>
-    <div class="step">
-        <div class="step-content">
-            <span class="num">3</span>
-            <div class="text">Свяжитесь с водителем</div>
-        </div>
-    </div>
-    <div class="step">
-        <div class="step-content">
-            <span class="num">4</span>
-            <div class="text">
-                Оформите 
-                <a href="https://care.yandex.ru/maps-kasko" target="_blank" style="display: inline-flex; align-items: center; gap: 4px; background: rgba(252, 63, 29, 0.1); padding: 4px 10px; border-radius: 30px; border: 1px solid rgba(252, 63, 29, 0.3); text-decoration: none; color: white; margin: 0 2px;">
-                    <span style="display: inline-flex; align-items: center; justify-content: center; background: #FC3F1D; color: white; width: 20px; height: 20px; border-radius: 6px; font-weight: 700; font-size: 12px;">Я</span>
-                    <span>КАСКО</span>
-                </a>
+        
+        <!-- БЛОК ФОРУМА - ПОСЛЕДНИЕ ОБСУЖДЕНИЯ -->
+        <div class="forum-block">
+            <h3>💬 Последние обсуждения на форуме</h3>
+            <ul class="forum-list">
+                <li><a href="https://talk.soberdrive.ru/t/1">➡️ Как вызвать трезвого водителя?</a></li>
+                <li><a href="https://talk.soberdrive.ru/t/2">➡️ Цены на услуги в разных городах</a></li>
+                <li><a href="https://talk.soberdrive.ru/t/3">➡️ Отзывы водителей и клиентов</a></li>
+                <li><a href="https://talk.soberdrive.ru/t/4">➡️ Сотрудничество с таксопарками</a></li>
+                <li><a href="https://talk.soberdrive.ru/t/5">➡️ Как получить статус трезвого водителя</a></li>
+            </ul>
+            <div style="text-align: center;">
+                <a href="https://talk.soberdrive.ru" class="forum-link">Все темы форума →</a>
             </div>
         </div>
-    </div>
-</div>
         
         <a href="https://soberdrive.containerapps.ru/" class="tg-button" target="_blank">
                   🚀 Поехали
