@@ -3,25 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="favicon.png" type="image/png">
-    <!-- ОСНОВНЫЕ SEO-ТЕГИ -->
-    <title>🚗🪗 Народный Трезвый водитель — помогает везде | Sober Drive</title>
-    <meta name="description" content="Услуга трезвый водитель: профессиональный персональный водитель перегонщик за рулём вашего автомобиля. Вызвать трезвого водителя круглосуточно.">
-    <meta name="keywords" content="трезвый водитель, пьяный водитель, водитель на ночь, водитель на день, 0°,доктор, Drive, Dr, Sober Drive, народный, аукцион, биржа, ресурс водитель почасовой, водитель на час, услуга трезвый водитель, вызвать трезвого водителя, за рулём трезвый водитель, трезвый водитель недорого, трезвый водитель круглосуточно, трезвый водитель на своем авто, трезвый водитель цена, услуги трезвого водителя, водитель за руль, трезвый водитель москва, трезвый водитель спб, заказ трезвого водителя">
-    
+    <title>Sober Drive 0° — народный аукцион трезвых водителей</title>
+    <meta name="description" content="Сравни стоимость. 0% комиссии. Работает везде. Народный аукцион и биржа трезвых водителей.">
+    <meta name="keywords" content="трезвый водитель, аукцион трезвых водителей, биржа трезвых водителей, сравнить стоимость">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="Sober Drive">
-    <meta name="language" content="Russian">
     
-    <!-- Open Graph для соцсетей -->
-    <meta property="og:title" content="🚗🪗 Трезвый водитель — помогает везде">
-    <meta property="og:description" content="🚗🪗 Народный трезвый водитель за рулём вашего автомобиля. Вызвать трезвого водителя быстро и недорого. Круглосуточно.">
+    <meta property="og:title" content="Sober Drive 0° — народный аукцион трезвых водителей">
+    <meta property="og:description" content="Сравни стоимость. 0% комиссии. Работает везде.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://soberdrive.ru">
-    <meta property="og:image" content="https://soberdrive.ru/icon.svg">
-    <meta property="og:site_name" content="Sober Drive — народный трезвый водитель">
     
-    <!-- Фавикон -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     
     <style>
@@ -40,7 +32,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 12px;
+            padding: 16px;
         }
         
         .card {
@@ -48,511 +40,246 @@
             width: 100%;
             background: rgba(10, 20, 30, 0.7);
             backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border-radius: clamp(20px, 5vw, 32px);
-            padding: clamp(25px, 6vw, 50px) clamp(20px, 5vw, 40px);
+            border-radius: clamp(24px, 6vw, 40px);
+            padding: clamp(30px, 6vw, 50px) clamp(24px, 5vw, 40px);
             box-shadow: 0 30px 60px -15px rgba(0,0,0,0.8);
             border: 1px solid rgba(163, 198, 224, 0.2);
             text-align: center;
         }
         
-        .domain {
-            font-size: clamp(0.9rem, 3.5vw, 1.2rem);
-            letter-spacing: 4px;
-            color: #a3c6e0;
-            margin-bottom: 15px;
-            text-transform: uppercase;
-            font-weight: 300;
-            word-break: break-word;
-        }
-        
+        /* Основные тексты */
         h1 {
-            font-size: clamp(2.2rem, 8vw, 3rem);
-            font-weight: 400;
-            margin-bottom: 5px;
+            font-size: clamp(1.8rem, 6vw, 2.6rem);
+            font-weight: 500;
+            margin-bottom: 8px;
             line-height: 1.2;
         }
         
-        h1 span {
-            font-weight: 800;
+        .subhead {
+            font-size: clamp(1rem, 4vw, 1.3rem);
             color: #a3c6e0;
-            border-bottom: 3px solid rgba(163, 198, 224, 0.4);
-            padding-bottom: 5px;
+            margin-bottom: 16px;
+            font-weight: 400;
         }
         
-        .sub {
-            font-size: clamp(1.1rem, 4.5vw, 1.4rem);
-            opacity: 0.9;
-            margin-bottom: 20px;
-            color: #e0e0e0;
-            word-break: break-word;
+        .tagline {
+            font-size: clamp(1.3rem, 5vw, 1.8rem);
+            font-weight: 700;
+            margin: 20px 0 8px;
+            letter-spacing: -0.5px;
         }
         
-        .service-desc {
+        .zero-commission {
             font-size: clamp(1rem, 4vw, 1.2rem);
-            background: rgba(163, 198, 224, 0.1);
-            padding: 16px 20px;
-            border-radius: 60px;
-            margin: 15px 0 25px;
-            border: 1px solid rgba(163, 198, 224, 0.3);
+            opacity: 0.85;
+            margin-bottom: 32px;
+        }
+        
+        /* Главная кнопка */
+        .main-button {
             display: inline-block;
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-            width: 100%;
-            max-width: 100%;
-            word-break: break-word;
-        }
-        
-        .service-desc strong {
-            color: #a3c6e0;
-            font-weight: 700;
-        }
-        
-        .photo-figure {
-            margin: 30px 0;
-            width: 100%;
-        }
-        
-        .photo-container {
-            width: 100%;
-            border-radius: 24px;
-            overflow: hidden;
-            border: 3px solid rgba(163, 198, 224, 0.3);
-            box-shadow: 0 20px 30px -10px black;
-        }
-        
-        .photo-container img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        .photo-caption {
-            margin-top: 12px;
-            font-size: 0.9rem;
-            color: #a3c6e0;
-            opacity: 0.8;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 5px;
-        }
-        
-        .sber-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 4px;
-            color: #a3c6e0;
-            text-decoration: none;
-            border-bottom: 1px dotted #a3c6e0;
-        }
-        
-        .sber-link:hover {
-            color: white;
-            border-bottom-color: white;
-        }
-        
-        .sber-logo-small {
-            display: inline-block;
-            background: #21a038;
-            color: white;
-            width: 18px;
-            height: 18px;
-            border-radius: 4px;
-            font-size: 12px;
-            font-weight: 700;
-            line-height: 18px;
-            text-align: center;
-            margin-right: 2px;
-        }
-        
-        .steps {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin: 40px 0;
-        }
-        
-        .step {
-            flex: 1 1 calc(50% - 15px);
-            min-width: 200px;
-            background: rgba(0,0,0,0.4);
-            padding: 18px 12px;
-            border-radius: 20px;
-            border-left: 4px solid #a3c6e0;
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-        }
-        
-        /* На очень маленьких экранах — по одному в ряд */
-        @media (max-width: 480px) {
-            .step {
-                flex: 1 1 100%;
-                min-width: 100%;
-            }
-        }
-        
-        .step-content {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: flex-start;
-            gap: 12px;
-            text-align: left;
-            width: 100%;
-        }
-        
-        .step .num {
-            font-size: 1.6rem;
-            font-weight: 700;
-            color: #a3c6e0;
-            flex-shrink: 0;
-            line-height: 1;
-            min-width: 28px;
-            text-align: center;
-        }
-        
-        .step .text {
-            font-size: 1rem;
-            text-align: left;
-            flex: 1;
-            word-break: break-word;
-        }
-        
-        .step .text a {
-            color: white;
-            text-decoration: none;
-        }
-        
-        .step .text a:hover {
-            text-decoration: underline;
-            color: #a3c6e0;
-        }
-        
-        /* Блок форума */
-        .forum-block {
-            margin: 40px 0 30px;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.3);
-            border-radius: 24px;
-            border: 1px solid rgba(39, 167, 231, 0.2);
-            text-align: left;
-        }
-        
-        .forum-block h3 {
-            color: #27a7e7;
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            justify-content: center;
-        }
-        
-        .forum-list {
-            list-style: none;
-            padding: 0;
-            margin: 0 0 20px 0;
-        }
-        
-        .forum-list li {
-            margin: 12px 0;
-            padding: 8px 0;
-            border-bottom: 1px solid rgba(163, 198, 224, 0.1);
-        }
-        
-        .forum-list li a {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 1rem;
-            transition: 0.2s;
-            display: block;
-        }
-        
-        .forum-list li a:hover {
-            color: #27a7e7;
-            transform: translateX(5px);
-        }
-        
-        .forum-link {
-            display: inline-block;
-            padding: 10px 24px;
-            background: rgba(39, 167, 231, 0.15);
-            border: 1px solid #27a7e7;
-            border-radius: 30px;
-            color: #27a7e7;
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: 0.2s;
-        }
-        
-        .forum-link:hover {
-            background: rgba(39, 167, 231, 0.3);
-            transform: translateY(-2px);
-        }
-        
-        .kasco-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: rgba(252, 63, 29, 0.1);
-            padding: 6px 12px;
-            border-radius: 30px;
-            margin-top: 8px;
-            border: 1px solid rgba(252, 63, 29, 0.3);
-            transition: 0.2s;
-            font-size: 0.95rem;
-        }
-        
-        .kasco-link:hover {
-            background: rgba(252, 63, 29, 0.2);
-            border-color: #FC3F1D;
-        }
-        
-        .kasco-link .yandex-logo {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: #FC3F1D;
-            color: white;
-            width: 20px;
-            height: 20px;
-            border-radius: 6px;
-            font-weight: 700;
-            font-size: 12px;
-        }
-        
-        .privacy {
-            background: rgba(0,0,0,0.5);
-            padding: 25px 20px;
-            border-radius: 24px;
-            margin: 30px 0;
-            font-size: 1rem;
-            border: 1px dashed #a3c6e0;
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-        }
-        
-        .privacy p {
-            margin: 8px 0;
-        }
-        
-        .tg-button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
             background: #27A7E7;
             color: white;
             text-decoration: none;
-            padding: 18px 20px;
+            padding: 18px 32px;
             border-radius: 60px;
             font-weight: 700;
-            font-size: clamp(1.2rem, 5vw, 1.6rem);
-            margin: 20px 0 10px;
-            transition: 0.3s;
+            font-size: 1.5rem;
+            margin: 16px 0 8px;
+            transition: 0.25s;
             border: none;
             cursor: pointer;
+            box-shadow: 0 10px 25px -8px rgba(39, 167, 231, 0.4);
             width: 100%;
-            box-shadow: 0 15px 30px -8px rgba(39, 167, 231, 0.5);
-            letter-spacing: 1px;
+            max-width: 320px;
         }
         
-        .tg-button:hover {
+        .main-button:hover {
             background: #1d8fd1;
-            transform: scale(1.02) translateY(-3px);
-            box-shadow: 0 20px 35px -5px rgba(39, 167, 231, 0.7);
+            transform: scale(1.02) translateY(-2px);
+            box-shadow: 0 18px 30px -8px rgba(39, 167, 231, 0.5);
         }
         
-        .tg-button svg {
-            width: clamp(24px, 6vw, 32px);
-            height: clamp(24px, 6vw, 32px);
-            fill: white;
-            flex-shrink: 0;
-        }
-        
-        .footer {
-            margin-top: 40px;
-            font-size: clamp(0.9rem, 3.5vw, 1rem);
-            opacity: 0.7;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            padding-top: 25px;
-        }
-        
-        .footer-email {
-            margin-top: 15px;
-            font-size: 1rem;
+        /* Заголовки секций */
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 48px 0 24px;
             color: #a3c6e0;
-            word-break: break-all;
+            text-align: center;
+            letter-spacing: -0.3px;
         }
         
-        .footer-email a {
+        .steps {
+            background: rgba(0, 0, 0, 0.25);
+            border-radius: 28px;
+            padding: 24px 20px;
+            margin: 16px 0 8px;
+            text-align: left;
+        }
+        
+        .step-item {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            margin-bottom: 18px;
+            font-size: 1.05rem;
+            flex-wrap: wrap;
+        }
+        
+        .step-number {
+            font-weight: 700;
+            color: #27a7e7;
+            min-width: 32px;
+            font-size: 1.2rem;
+        }
+        
+        .step-text {
+            flex: 1;
+        }
+        
+        /* Форум */
+        .forum-block {
+            background: rgba(0, 0, 0, 0.25);
+            border-radius: 28px;
+            padding: 24px 20px;
+            margin: 32px 0 24px;
+            text-align: left;
+        }
+        
+        .forum-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #a3c6e0;
+            text-align: center;
+        }
+        
+        .forum-links {
+            list-style: none;
+        }
+        
+        .forum-links li {
+            margin: 14px 0;
+            padding-left: 8px;
+            border-left: 3px solid #27a7e7;
+        }
+        
+        .forum-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: 0.2s;
+            display: block;
+        }
+        
+        .forum-links a:hover {
+            color: #27a7e7;
+            transform: translateX(4px);
+        }
+        
+        /* Футер */
+        .footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.85rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .footer a {
             color: #a3c6e0;
             text-decoration: none;
-            border-bottom: 1px dotted #a3c6e0;
-            word-break: break-all;
         }
         
-        .hashtag {
-            margin-top: 15px;
-            font-size: 0.95rem;
-            color: #a3c6e0;
-            opacity: 0.8;
-            letter-spacing: 1px;
-        }
-        
-        .policy-link {
-            margin-top: 20px;
-            border-top: 1px dashed rgba(163, 198, 224, 0.3);
-            padding-top: 15px;
-            word-break: break-word;
-        }
-        
-        .policy-link a {
-            color: #a3c6e0;
+        .footer a:hover {
             text-decoration: underline;
-            text-underline-offset: 4px;
-            word-break: break-word;
         }
         
-        a {
-            color: #a3c6e0;
+        .copyright {
+            width: 100%;
+            text-align: center;
+            margin-top: 16px;
+            opacity: 0.6;
+            font-size: 0.75rem;
         }
         
-        /* Дополнительная страховка для очень маленьких */
-        @media (max-width: 380px) {
-            .step-content {
-                gap: 8px;
-            }
-            .step .num {
-                font-size: 1.4rem;
-                min-width: 24px;
-            }
-            .step .text {
-                font-size: 0.95rem;
-            }
-            .tg-button {
-                padding: 16px 15px;
-                font-size: 1.1rem;
-            }
+        /* Мелкие правки */
+        .button-wrapper {
+            display: flex;
+            justify-content: center;
         }
         
-        @media (min-width: 768px) and (max-width: 1024px) {
+        @media (max-width: 480px) {
             .card {
-                padding: 40px 35px;
+                padding: 28px 20px;
             }
-            .step {
-                flex: 1 1 calc(50% - 15px);
+            .step-item {
+                gap: 10px;
+            }
+            .main-button {
+                font-size: 1.3rem;
+                padding: 16px 20px;
             }
         }
     </style>
 </head>
 <body>
     <div class="card">
-        <div class="domain">soberdrive.ru</div>
-        <h1>Истинный <span>путь</span></h1>
-        <div class="sub">🚗🪗 трезвый водитель · поможем везде</div>
+        <h1>Sober Drive 0°</h1>
+        <div class="subhead">Народный аукцион<br>Биржа трезвых водителей</div>
         
-        <div class="service-desc">
-            
-            Sober Drive — народный ресурс трезвых водителй
+        <div class="tagline">«Сравни стоимость»</div>
+        <div class="zero-commission">Поможем везде: 0% комиссии </div>
+        <div class="button-wrapper">
+            <a href="https://soberdrive.containerapps.ru/" class="main-button" target="_blank">
+                🚀 ПОЕХАЛИ
+            </a>
         </div>
-        
-        <figure class="photo-figure">
-            <div class="photo-container">
-                <img src="photo_5233366488985571976_c.jpg" 
-                     alt="Трезвый водитель — народный ресурс" 
-                     title="Sober Drive - народный ресурс Трезвых водителей"
-                     onerror="this.style.display='none'; this.parentElement.style.display='none';">
-            </div>
-            <figcaption class="photo-caption">
-                <span>🎨 Аватар создан </span>
-                <a href="https://alice.yandex.ru/" target="_blank" class="sber-link">
-                    <span class="sber-logo-small">С</span>
-                    Алисой
-                </a>
-                <span> Al</span>
-            </figcaption>
-        </figure>
-        
+        <div class="section-title">Как это работает:</div>
         <div class="steps">
-            <div class="step">
-                <div class="step-content">
-                    <span class="num">1</span>
-                    <div class="text">
-                        <a href="https://soberdrive.ru" target="_blank">Заполните форму заказа</a>
-                    </div>
-                </div>
+            <div class="step-item">
+                <span class="step-number">1.</span>
+                <span class="step-text">Выберите регион РФ</span>
             </div>
-            <div class="step">
-                <div class="step-content">
-                    <span class="num">2</span>
-                    <div class="text">Выберите лучшую цену</div>
-                </div>
+            <div class="step-item">
+                <span class="step-number">2.</span>
+                <span class="step-text">Укажите маршрут</span>
             </div>
-            <div class="step">
-                <div class="step-content">
-                    <span class="num">3</span>
-                    <div class="text">Свяжитесь с водителем</div>
-                </div>
+            <div class="step-item">
+                <span class="step-number">3.</span>
+                <span class="step-text">Запросите стоимость</span>
             </div>
-            <div class="step">
-                <div class="step-content">
-                    <span class="num">4</span>
-                    <div class="text">
-                        Оформите 
-                        <a href="https://care.yandex.ru/maps-kasko" target="_blank" style="display: inline-flex; align-items: center; gap: 4px; background: rgba(252, 63, 29, 0.1); padding: 4px 10px; border-radius: 30px; border: 1px solid rgba(252, 63, 29, 0.3); text-decoration: none; color: white; margin: 0 2px;">
-                            <span style="display: inline-flex; align-items: center; justify-content: center; background: #FC3F1D; color: white; width: 20px; height: 20px; border-radius: 6px; font-weight: 700; font-size: 12px;">Я</span>
-                            <span>КАСКО</span>
-                        </a>
-                    </div>
-                </div>
+            <div class="step-item">
+                <span class="step-number">4.</span>
+                <span class="step-text">Получите предложения</span>
+            </div>
+            <div class="step-item">
+                <span class="step-number">5.</span>
+                <span class="step-text">Позвоните водителю</span>
             </div>
         </div>
         
+        <!-- Форум: видное место + ссылки на актуальные темы -->
         <div class="forum-block">
-    <h3>💬 Обсуждаем на форуме</h3>
-    <ul class="forum-list">
-        <li><a href="https://talk.soberdrive.ru/discussions">➡️ Свежие темы форума</a></li>
-        <li><a href="https://talk.soberdrive.ru/tags">➡️ Категории</a></li>
-        <li><a href="https://talk.soberdrive.ru/users">➡️ Сообщество водителей</a></li>
-        <li><a href="https://talk.soberdrive.ru/settings">➡️ Настройки профиля</a></li>
-    </ul>
-    <div style="text-align: center;">
-        <a href="https://talk.soberdrive.ru" class="forum-link">Перейти на форум →</a>
-    </div>
-</div>
-        
-        <a href="https://soberdrive.containerapps.ru/" class="tg-button" target="_blank">
-                  🚀 Поехали
-        </a>
-
-        
-        <div class="privacy">
-            <p>🔒 Конфиденциальность:</p>
-            <p>• Базы данных нет</p>
-            <p>• Логи не записываются</p>
-            <p>• Заказ удаляется навсегда</p>
-            
-            <div class="policy-link">
-                📄 <a href="https://soberdrive.containerapps.ru/" 
-                   target="_blank">
-                   Политика использования
-                </a>
-            </div>
+            <div class="forum-title">💬 Форум:</div>
+            <ul class="forum-links">
+                <li><a href="https://talk.soberdrive.ru/d/5-testovyy-zakaz" target="_blank">➡️ Тестовый заказ</a></li>
+                <li><a href="https://talk.soberdrive.ru/t/Bidding" target="_blank">➡️ Предложение цены</a></li>
+                <li><a href="https://talk.soberdrive.ru/t/order-notifications" target="_blank">➡️ Уведомления о заказах</a></li>
+                <li><a href="https://talk.soberdrive.ru/t/reviews" target="_blank">➡️ Отзывы</a></li>
+            </ul>
         </div>
         
+        <!-- Футер: оферта, политика, копирайт -->
         <div class="footer">
-            Sober Drive — домой с трезвым водителем<br>
-            <strong>soberdrive.ru</strong> — 2026
-            <div class="footer-email">
-                📧 <a href="mailto:forum@soberdrive.ru">написать на почту</a>
-            </div>
-            <div class="hashtag">
-                #ТрезвыйВодитель
-            </div>
+            <a href="https://soberdrive.ru/offer" target="_blank">📋 Договор-оферта и политика обработки ПДн</a>
+        </div>
+        <div class="copyright">
+            Sober Drive 0°
         </div>
     </div>
 </body>
