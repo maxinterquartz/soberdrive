@@ -3,18 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <link rel="icon" href="favicon.png" type="image/png">
-    <title>Sober Drive 0° — народный аукцион трезвых водителей</title>
-    <meta name="description" content="Сравни стоимость. 0% комиссии. Работает везде. Народный аукцион и биржа трезвых водителей.">
-    <meta name="keywords" content="трезвый водитель, аукцион трезвых водителей, биржа трезвых водителей, сравнить стоимость">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="canonical" href="https://soberdrive.ru/">
+    
+    <title>Sober Drive 0° — народный аукцион и биржа трезвых водителей | Сравни стоимость</title>
+    <meta name="description" content=" Аукцион трезвых водителей. Услуга трезвый водитель РФ. 0% без комиссии. Выберите регион, выбор предложений, позвоните водителю без посредников.
+        Москва, СПб, Казань, Екатеринбург, Новосибирск, Краснодар, Сочи, Владивосток, Ростов-на-Дону, Уфа, Красноярск, Пермь, Воронеж, Волгоград, Омск, Челябинск, Нижний Новгород, Самара, Калининград.">
+    <meta name="keywords" content="услуга, трезвый водитель, Москва, Санкт-Петербург, Казань, Екатеринбург, Новосибирск, Краснодар, Сочи, Владивосток, Ростов-на-Дону, Уфа, 
+        Красноярск, Пермь, Воронеж, Волгоград, Омск, Челябинск, Нижний Новгород, Самара, Калининград">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta name="robots" content="index, follow">
+    <meta name="author" content="Sober Drive 0°">
+    <meta name="copyright" content="Sober Drive 0°">
     
+    <!-- Open Graph -->
     <meta property="og:title" content="Sober Drive 0° — народный аукцион трезвых водителей">
-    <meta property="og:description" content="Сравни стоимость. 0% комиссии. Работает везде.">
+    <meta property="og:description" content="Услуга Трезвый водитель 0% комиссии. Работает по всей России.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://soberdrive.ru">
+    <meta property="og:site_name" content="Sober Drive 0°">
+    <meta property="og:locale" content="ru_RU">
     
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Sober Drive 0° — биржа трезвых водителей">
+    <meta name="twitter:description" content="Сравни стоимость. 0% комиссии. Работает по всей РФ.">
     
     <style>
         * {
@@ -47,7 +60,6 @@
             text-align: center;
         }
         
-        /* Основные тексты */
         h1 {
             font-size: clamp(1.8rem, 6vw, 2.6rem);
             font-weight: 500;
@@ -75,7 +87,6 @@
             margin-bottom: 32px;
         }
         
-        /* Главная кнопка */
         .main-button {
             display: inline-block;
             background: #27A7E7;
@@ -100,7 +111,6 @@
             box-shadow: 0 18px 30px -8px rgba(39, 167, 231, 0.5);
         }
         
-        /* Заголовки секций */
         .section-title {
             font-size: 1.5rem;
             font-weight: 600;
@@ -116,6 +126,11 @@
             padding: 24px 20px;
             margin: 16px 0 8px;
             text-align: left;
+        }
+        
+        .steps ol {
+            list-style: none;
+            padding: 0;
         }
         
         .step-item {
@@ -138,7 +153,6 @@
             flex: 1;
         }
         
-        /* Форум */
         .forum-block {
             background: rgba(0, 0, 0, 0.25);
             border-radius: 28px;
@@ -178,9 +192,44 @@
             transform: translateX(4px);
         }
         
-        /* Футер */
+        /* Блок с городами-тегами */
+        .cities-tags {
+            margin: 32px 0 24px;
+            text-align: center;
+        }
+        
+        .cities-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.6;
+            margin-bottom: 12px;
+        }
+        
+        .tags-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .city-tag {
+            background: rgba(163, 198, 224, 0.12);
+            border: 1px solid rgba(163, 198, 224, 0.25);
+            border-radius: 40px;
+            padding: 5px 12px;
+            font-size: 0.75rem;
+            color: #a3c6e0;
+            transition: 0.2s;
+        }
+        
+        .city-tag:hover {
+            background: rgba(163, 198, 224, 0.25);
+            border-color: #a3c6e0;
+        }
+        
         .footer {
-            margin-top: 48px;
+            margin-top: 32px;
             padding-top: 24px;
             border-top: 1px solid rgba(255,255,255,0.1);
             font-size: 0.85rem;
@@ -207,7 +256,6 @@
             font-size: 0.75rem;
         }
         
-        /* Мелкие правки */
         .button-wrapper {
             display: flex;
             justify-content: center;
@@ -224,62 +272,111 @@
                 font-size: 1.3rem;
                 padding: 16px 20px;
             }
+            .city-tag {
+                font-size: 0.7rem;
+                padding: 4px 10px;
+            }
         }
     </style>
+    
+    <!-- Schema.org микроразметка -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Sober Drive 0°",
+        "alternateName": "Народный аукцион трезвых водителей",
+        "url": "https://soberdrive.ru",
+        "description": "0% комиссии. Сравни стоимость трезвого водителя по всей РФ.",
+        "inLanguage": "ru",
+        "audience": {
+            "@type": "Audience",
+            "name": "Водители и пассажиры, нуждающиеся в трезвом водителе"
+        }
+    }
+    </script>
 </head>
 <body>
     <div class="card">
-        <h1>Sober Drive 0°</h1>
-        <div class="subhead">Народный аукцион<br>Биржа трезвых водителей</div>
+        <h1>Sober Drive 0° — <span style="color:#27a7e7;">народный аукцион</span> и биржа трезвых водителей</h1>
+        <div class="subhead">Сравни стоимость • 0% комиссии • Работает везде</div>
         
         <div class="tagline">«Сравни стоимость»</div>
-        <div class="zero-commission">Поможем везде: 0% комиссии </div>
+        <div class="zero-commission">📞 Трезвый водитель по всей РФ — просто выбери лучшее предложение</div>
+        
         <div class="button-wrapper">
             <a href="https://soberdrive.containerapps.ru/" class="main-button" target="_blank">
                 🚀 ПОЕХАЛИ
             </a>
         </div>
-        <div class="section-title">Как это работает:</div>
+        
+        <h2 class="section-title">Как вызвать трезвого водителя за 5 шагов</h2>
         <div class="steps">
-            <div class="step-item">
-                <span class="step-number">1.</span>
-                <span class="step-text">Выберите регион РФ</span>
-            </div>
-            <div class="step-item">
-                <span class="step-number">2.</span>
-                <span class="step-text">Укажите маршрут</span>
-            </div>
-            <div class="step-item">
-                <span class="step-number">3.</span>
-                <span class="step-text">Запросите стоимость</span>
-            </div>
-            <div class="step-item">
-                <span class="step-number">4.</span>
-                <span class="step-text">Получите предложения</span>
-            </div>
-            <div class="step-item">
-                <span class="step-number">5.</span>
-                <span class="step-text">Позвоните водителю</span>
-            </div>
+            <ol>
+                <li class="step-item">
+                    <span class="step-number">1.</span>
+                    <span class="step-text">Выберите регион РФ</span>
+                </li>
+                <li class="step-item">
+                    <span class="step-number">2.</span>
+                    <span class="step-text">Укажите маршрут поездки</span>
+                </li>
+                <li class="step-item">
+                    <span class="step-number">3.</span>
+                    <span class="step-text">Запросите стоимость у водителей</span>
+                </li>
+                <li class="step-item">
+                    <span class="step-number">4.</span>
+                    <span class="step-text">Получите и сравните предложения</span>
+                </li>
+                <li class="step-item">
+                    <span class="step-number">5.</span>
+                    <span class="step-text">Позвоните водителю и договоритесь</span>
+                </li>
+            </ol>
         </div>
         
-        <!-- Форум: видное место + ссылки на актуальные темы -->
+        <h2 class="section-title">💬 Обсуждаем на форуме</h2>
         <div class="forum-block">
-            <div class="forum-title">💬 Форум:</div>
             <ul class="forum-links">
-                <li><a href="https://talk.soberdrive.ru/d/5-testovyy-zakaz" target="_blank">➡️ Тестовый заказ</a></li>
-                <li><a href="https://talk.soberdrive.ru/t/Bidding" target="_blank">➡️ Предложение цены</a></li>
-                <li><a href="https://talk.soberdrive.ru/t/order-notifications" target="_blank">➡️ Уведомления о заказах</a></li>
-                <li><a href="https://talk.soberdrive.ru/t/reviews" target="_blank">➡️ Отзывы</a></li>
+                <li><a href="https://talk.soberdrive.ru/d/5-testovyy-zakaz" target="_blank">➡️ Тестовый заказ трезвого водителя</a></li>
+                <li><a href="https://talk.soberdrive.ru/t/Bidding" target="_blank">➡️ Как предлагать цену водителям</a></li>
+                <li><a href="https://talk.soberdrive.ru/t/order-notifications" target="_blank">➡️ Уведомления о новых заказах</a></li>
+                <li><a href="https://talk.soberdrive.ru/t/reviews" target="_blank">➡️ Отзывы о трезвых водителях</a></li>
             </ul>
         </div>
         
-        <!-- Футер: оферта, политика, копирайт -->
+        <!-- Блок с городами-тегами -->
+        <div class="cities-tags">
+            <div class="cities-title">📍 Работаем по всей России</div>
+            <div class="tags-wrapper">
+                <span class="city-tag">Москва</span>
+                <span class="city-tag">Санкт-Петербург</span>
+                <span class="city-tag">Казань</span>
+                <span class="city-tag">Екатеринбург</span>
+                <span class="city-tag">Новосибирск</span>
+                <span class="city-tag">Краснодар</span>
+                <span class="city-tag">Сочи</span>
+                <span class="city-tag">Владивосток</span>
+                <span class="city-tag">Ростов-на-Дону</span>
+                <span class="city-tag">Уфа</span>
+                <span class="city-tag">Красноярск</span>
+                <span class="city-tag">Пермь</span>
+                <span class="city-tag">Воронеж</span>
+                <span class="city-tag">Волгоград</span>
+                <span class="city-tag">Омск</span>
+                <span class="city-tag">Челябинск</span>
+                <span class="city-tag">Нижний Новгород</span>
+                <span class="city-tag">Самара</span>
+                <span class="city-tag">Калининград</span>
+            </div>
+        </div>
+        
         <div class="footer">
             <a href="https://soberdrive.ru/offer" target="_blank">📋 Договор-оферта и политика обработки ПДн</a>
         </div>
         <div class="copyright">
-            Sober Drive 0°
+            Sober Drive 0° — народная биржа трезвых водителей
         </div>
     </div>
 </body>
