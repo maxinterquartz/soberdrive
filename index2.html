@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="canonical" href="https://soberdrive.ru/">
+    
+    <title>Sober Drive 0° | Трезвый водитель | услуга</title>
+    <meta name="description" content=" Народный аукцион трезвых водителей. Услуга трезвый водитель РФ. 0% без комиссии. Выберите регион, выбор предложений, позвоните водителю без посредников.
+        Москва, СПб, Казань, Екатеринбург, Новосибирск, Краснодар, Сочи, Владивосток, Ростов-на-Дону, Уфа, Красноярск, Пермь, Воронеж, Волгоград, Омск, Челябинск, Нижний Новгород, Самара, Калининград.">
+    <meta name="keywords" content="услуга, трезвый водитель, Москва, Санкт-Петербург, Казань, Екатеринбург, Новосибирск, Краснодар, Сочи, Владивосток, Ростов-на-Дону, Уфа, 
+        Красноярск, Пермь, Воронеж, Волгоград, Омск, Челябинск, Нижний Новгород, Самара, Калининград">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sober Drive 0°">
+    <meta name="copyright" content="Sober Drive 0°">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sober Drive 0° — народный аукцион трезвых водителей">
+    <meta property="og:description" content="Услуга Трезвый водитель 0% комиссии. Работает по всей России.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://soberdrive.ru">
+    <meta property="og:site_name" content="Sober Drive 0°">
+    <meta property="og:locale" content="ru_RU">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Sober Drive 0° — биржа трезвых водителей">
+    <meta name="twitter:description" content="Сравни стоимость. 0% комиссии. Работает по всей РФ.">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: linear-gradient(145deg, #1a2632 0%, #1e2f3d 100%);
+            color: white;
+            line-height: 1.5;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            position: relative;
+        }
+        
+        /* ----- Иконка в левом верхнем углу ----- */
+        .top-left-icon {
+            position: fixed;
+            top: 24px;
+            left: 24px;
+            z-index: 1000;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease, opacity 0.2s;
+            background: rgba(10, 20, 30, 0.45);
+            backdrop-filter: blur(6px);
+            border-radius: 60px;
+            padding: 8px 12px;
+            border: 1px solid rgba(163, 198, 224, 0.25);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .top-left-icon:hover {
+            transform: scale(1.02);
+            background: rgba(39, 167, 231, 0.25);
+            border-color: rgba(39, 167, 231, 0.5);
+        }
+        
+        .top-left-icon img,
+        .top-left-icon svg {
+            width: 36px;
+            height: 36px;
+            display: block;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+        }
+        
+        /* Адаптив для маленьких экранов — чуть меньше отступы */
+        @media (max-width: 640px) {
+            .top-left-icon {
+                top: 16px;
+                left: 16px;
+                padding: 6px 10px;
+            }
+            .top-left-icon img,
+            .top-left-icon svg {
+                width: 28px;
+                height: 28px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .top-left-icon {
+                top: 12px;
+                left: 12px;
+                padding: 5px 8px;
+            }
+            .top-left-icon img,
+            .top-left-icon svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        
+        .card {
+            max-width: 750px;
+            width: 100%;
+            background: rgba(10, 20, 30, 0.7);
+            backdrop-filter: blur(12px);
+            border-radius: clamp(24px, 6vw, 40px);
+            padding: clamp(30px, 6vw, 50px) clamp(24px, 5vw, 40px);
+            box-shadow: 0 30px 60px -15px rgba(0,0,0,0.8);
+            border: 1px solid rgba(163, 198, 224, 0.2);
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: clamp(1.8rem, 6vw, 2.6rem);
+            font-weight: 500;
+            margin-bottom: 8px;
+            line-height: 1.2;
+        }
+        
+        .subhead {
+            font-size: clamp(1rem, 4vw, 1.3rem);
+            color: #a3c6e0;
+            margin-bottom: 16px;
+            font-weight: 400;
+        }
+        
+        .tagline {
+            font-size: clamp(1.3rem, 5vw, 1.8rem);
+            font-weight: 700;
+            margin: 20px 0 8px;
+            letter-spacing: -0.5px;
+        }
+        
+        .zero-commission {
+            font-size: clamp(1rem, 4vw, 1.2rem);
+            opacity: 0.85;
+            margin-bottom: 32px;
+        }
+        
+        .main-button {
+            display: inline-block;
+            background: #27A7E7;
+            color: white;
+            text-decoration: none;
+            padding: 18px 32px;
+            border-radius: 60px;
+            font-weight: 700;
+            font-size: 1.5rem;
+            margin: 16px 0 8px;
+            transition: 0.25s;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 10px 25px -8px rgba(39, 167, 231, 0.4);
+            width: 100%;
+            max-width: 320px;
+        }
+        
+        .main-button:hover {
+            background: #1d8fd1;
+            transform: scale(1.02) translateY(-2px);
+            box-shadow: 0 18px 30px -8px rgba(39, 167, 231, 0.5);
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 48px 0 24px;
+            color: #a3c6e0;
+            text-align: center;
+            letter-spacing: -0.3px;
+        }
+        
+        .steps {
+            background: rgba(0, 0, 0, 0.25);
+            border-radius: 28px;
+            padding: 24px 20px;
+            margin: 16px 0 8px;
+            text-align: left;
+        }
+        
+        .steps ol {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .step-item {
+            display: flex;
+            align-items: baseline;
+            gap: 12px;
+            margin-bottom: 18px;
+            font-size: 1.05rem;
+            flex-wrap: wrap;
+        }
+        
+        .step-number {
+            font-weight: 700;
+            color: #27a7e7;
+            min-width: 32px;
+            font-size: 1.2rem;
+        }
+        
+        .step-text {
+            flex: 1;
+        }
+        
+        .forum-block {
+            background: rgba(0, 0, 0, 0.25);
+            border-radius: 28px;
+            padding: 24px 20px;
+            margin: 32px 0 24px;
+            text-align: left;
+        }
+        
+        .forum-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #a3c6e0;
+            text-align: center;
+        }
+        
+        .forum-links {
+            list-style: none;
+        }
+        
+        .forum-links li {
+            margin: 14px 0;
+            padding-left: 8px;
+            border-left: 3px solid #27a7e7;
+        }
+        
+        .forum-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: 0.2s;
+            display: block;
+        }
+        
+        .forum-links a:hover {
+            color: #27a7e7;
+            transform: translateX(4px);
+        }
+        
+        /* Блок с городами-тегами */
+        .cities-tags {
+            margin: 32px 0 24px;
+            text-align: center;
+        }
+        
+        .cities-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.6;
+            margin-bottom: 12px;
+        }
+        
+        .tags-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .city-tag {
+            background: rgba(163, 198, 224, 0.12);
+            border: 1px solid rgba(163, 198, 224, 0.25);
+            border-radius: 40px;
+            padding: 5px 12px;
+            font-size: 0.75rem;
+            color: #a3c6e0;
+            transition: 0.2s;
+        }
+        
+        .city-tag:hover {
+            background: rgba(163, 198, 224, 0.25);
+            border-color: #a3c6e0;
+        }
+        
+        .footer {
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.85rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .footer a {
+            color: #a3c6e0;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .copyright {
+            width: 100%;
+            text-align: center;
+            margin-top: 16px;
+            opacity: 0.6;
+            font-size: 0.75rem;
+        }
+        
+        .button-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        
+        @media (max-width: 480px) {
+            .card {
+                padding: 28px 20px;
+            }
+            .step-item {
+                gap: 10px;
+            }
+            .main-button {
+                font-size: 1.3rem;
+                padding: 16px 20px;
+            }
+            .city-tag {
+                font-size: 0.7rem;
+                padding: 4px 10px;
+            }
+        }
+    </style>
+    
+    <!-- Schema.org микроразметка -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Sober Drive 0°",
+        "alternateName": "Народный аукцион трезвых водителей",
+        "url": "https://soberdrive.ru",
+        "description": "0% комиссии. Сравни стоимость трезвого водителя по всей РФ.",
+        "inLanguage": "ru",
+        "audience": {
+            "@type": "Audience",
+            "name": "Водители и пассажиры, нуждающиеся в трезвом водителе"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Иконка в левом верхнем углу: ссылка на icon.svg -->
+    <div class="top-left-icon" aria-label="Иконка сервиса">
+        <img src="icon.svg" alt="Sober Drive icon" onerror="this.onerror=null; this.parentElement.style.display='flex'; this.style.display='none'; this.parentElement.innerHTML = '<svg width=\'36\' height=\'36\' viewBox=\'0 0 24 24\' fill=\'none\' xmlns=\'http://www.w3.org/2000/svg\'><path d=\'M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm0 13c-2.33 0-4.31-1.46-5.11-3.5h10.22c-.8 2.04-2.78 3.5-5.11 3.5z\' fill=\'#27A7E7\'/></svg>';">
+    </div>
+
+    <div class="card">
+        <h1>Sober Drive 0°</h1>
+        <div class="subhead">Услуга Трезвый водитель <br>Народный аукцион <br>Биржа заказов</div>
+                         
+        <div class="tagline">Выбор стоимости</div>
+        <div class="zero-commission">Поможем везде: комиссия 0%</div>
+        
+        <div class="button-wrapper">
+            <a href="https://soberdrive.containerapps.ru/" class="main-button">
+                🚗💨 Поехали!
+            </a>
+        </div>
+        
+        <h2 class="section-title">Все города:</h2>
+        <div class="steps">
+            <ol>
+                <li class="step-item">
+                    <span class="step-number">1.</span>
+                    <span class="step-text">Выберите регион РФ</span>
+                </li>
+                <li class="step-item">
+                    <span class="step-number">2.</span>
+                    <span class="step-text">Укажите маршрут поездки</span>
+                </li>
+                <li class="step-item">
+                    <span class="step-number">3.</span>
+                    <span class="step-text">Запросите стоимость у трезвых водителей</span>
+                </li>
+                <li class="step-item">
+                    <span class="step-number">4.</span>
+                    <span class="step-text">Получите и сравните предложения</span>
+                </li>
+                <li class="step-item">
+                    <span class="step-number">5.</span>
+                    <span class="step-text">Получите номер телефона водителя</span>
+                </li>
+            </ol>
+        </div>
+        
+        <h2 class="section-title">💬 Форум:</h2>
+        <div class="forum-block">
+            <ul class="forum-links">
+                <li><a href="https://talk.soberdrive.ru/d/5-testovyy-zakaz">➡️ Тестовый заказ</a></li>
+                <li><a href="https://talk.soberdrive.ru/t/Bidding">➡️ Как предлагать цену водителям</a></li>
+                <li><a href="https://talk.soberdrive.ru/t/order-notifications">➡️ Уведомления о новых заказах</a></li>
+                <li><a href="https://talk.soberdrive.ru/t/reviews">➡️ Отзывы о трезвых водителях</a></li>
+            </ul>
+        </div>
+        
+        <!-- Блок с городами-тегами -->
+        <div class="cities-tags">
+            <div class="cities-title">📍 Работаем по всей России</div>
+            <div class="tags-wrapper">
+                <span class="city-tag">Москва</span>
+                <span class="city-tag">Санкт-Петербург</span>
+                <span class="city-tag">Казань</span>
+                <span class="city-tag">Екатеринбург</span>
+                <span class="city-tag">Новосибирск</span>
+                <span class="city-tag">Краснодар</span>
+                <span class="city-tag">Сочи</span>
+                <span class="city-tag">Владивосток</span>
+                <span class="city-tag">Ростов-на-Дону</span>
+                <span class="city-tag">Уфа</span>
+                <span class="city-tag">Красноярск</span>
+                <span class="city-tag">Пермь</span>
+                <span class="city-tag">Воронеж</span>
+                <span class="city-tag">Волгоград</span>
+                <span class="city-tag">Омск</span>
+                <span class="city-tag">Челябинск</span>
+                <span class="city-tag">Нижний Новгород</span>
+                <span class="city-tag">Самара</span>
+                <span class="city-tag">Калининград</span>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <a href="https://soberdrive.ru/offer">📋 Договор-оферта и политика обработки ПДн</a>
+        </div>
+        <div class="copyright">
+            Sober Drive 0° — народная биржа трезвых водителей
+        </div>
+    </div>
+
+    <!-- Небольшой скрипт для коррекции отображения, если icon.svg временно недоступен:
+         иконка остаётся кликабельной, но placeholder (SVG-заглушка) покажет стильный значок авто -->
+    <script>
+        (function() {
+            const iconContainer = document.querySelector('.top-left-icon');
+            if (!iconContainer) return;
+            const img = iconContainer.querySelector('img');
+            if (!img) return;
+            
+            // Если изображение не загрузилось или не найдено (icon.svg отсутствует) — покажем fallback-иконку.
+            img.addEventListener('error', function() {
+                // Предотвращаем бесконечный цикл
+                if (iconContainer.getAttribute('data-fallback-set') === 'true') return;
+                iconContainer.setAttribute('data-fallback-set', 'true');
+                
+                // Удаляем сломанный img
+                img.remove();
+                
+                // Создаём SVG-заглушку с тематикой авто / руль / машина (гармонирует с брендом)
+                const svgNS = "http://www.w3.org/2000/svg";
+                const svg = document.createElementNS(svgNS, "svg");
+                svg.setAttribute("width", "36");
+                svg.setAttribute("height", "36");
+                svg.setAttribute("viewBox", "0 0 24 24");
+                svg.setAttribute("fill", "none");
+                svg.style.display = "block";
+                
+                // Путь: стилизованный автомобиль / руль (микс) — эстетично для сервиса трезвый водитель
+                const path1 = document.createElementNS(svgNS, "path");
+                path1.setAttribute("d", "M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.85 7h10.29l1.04 3H5.81l1.04-3zM19 17H5v-5h14v5zM7.5 13h2v2h-2zm7 0h2v2h-2z");
+                path1.setAttribute("fill", "#27A7E7");
+                svg.appendChild(path1);
+                
+                // Дополнительный акцент (колеса)
+                const circle1 = document.createElementNS(svgNS, "circle");
+                circle1.setAttribute("cx", "7.5");
+                circle1.setAttribute("cy", "16.5");
+                circle1.setAttribute("r", "1.5");
+                circle1.setAttribute("fill", "#A3C6E0");
+                svg.appendChild(circle1);
+                
+                const circle2 = document.createElementNS(svgNS, "circle");
+                circle2.setAttribute("cx", "16.5");
+                circle2.setAttribute("cy", "16.5");
+                circle2.setAttribute("r", "1.5");
+                circle2.setAttribute("fill", "#A3C6E0");
+                svg.appendChild(circle2);
+                
+                iconContainer.appendChild(svg);
+                
+                // небольшая анимация/улучшение
+                svg.setAttribute("style", "filter: drop-shadow(0 2px 3px rgba(0,0,0,0.2));");
+            });
+            
+            // Если изображение уже загружено и оно валидно — ничего не делаем.
+            if (img.complete && img.naturalWidth === 0 && img.naturalHeight === 0) {
+                // В некоторых браузерах error не срабатывает, если src пустой, проверим.
+                if (!img.src || img.src === window.location.href || img.src === "") {
+                    img.dispatchEvent(new Event('error'));
+                }
+            }
+        })();
+    </script>
+</body>
+</html>
