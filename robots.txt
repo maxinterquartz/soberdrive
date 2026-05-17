@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /api/
+Disallow: /icons/
+Disallow: /css/
+Disallow: /js/
+
+Sitemap: https://soberdrive.ru/sitemap.xml
