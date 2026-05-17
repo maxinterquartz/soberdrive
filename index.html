@@ -12,20 +12,17 @@
     <meta name="robots" content="index, follow">
     <meta name="author" content="Sober Drive 0°">
     <meta name="copyright" content="Sober Drive 0°">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Sober Drive 0° — народный аукцион трезвых водителей">
-    <meta property="og:description" content="Услуга Трезвый водитель 0% комиссии. Работает по всей России.">
+
+    <meta property="og:title" content="Услуги за рулём вашего автомобиля | Биржа трезвых водителей | Все города">
+    <meta property="og:description" content="0% комиссии. Сравните цены водителей. Москва, СПб, Казань, Екатеринбург, Новосибирск и все города РФ.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://soberdrive.ru">
-    <meta property="og:site_name" content="Sober Drive 0°">
-    <meta property="og:locale" content="ru_RU">
+    <meta property="og:url" content="https://soberdrive.ru/">
+    <meta property="og:image" content="https://soberdrive.ru/icon-512x512.png">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Sober Drive 0° — биржа трезвых водителей">
     <meta name="twitter:description" content="Сравни стоимость. 0% комиссии. Работает по всей РФ.">
-    
     <style>
         * {
             margin: 0;
@@ -277,21 +274,42 @@
     </style>
     
     <!-- Schema.org микроразметка -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Sober Drive 0°",
-        "alternateName": "Народный аукцион трезвых водителей РФ",
-        "url": "https://soberdrive.ru",
-        "description": "0% комиссии. Выбор лучшей цены.",
-        "inLanguage": "ru",
-        "audience": {
-            "@type": "Audience",
-            "name": "Услуги за рулём вашего автомобиля"
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Услуги за рулём вашего автомобиля",
+  "provider": {
+    "@type": "Organization",
+    "name": "Sober Drive 0°",
+    "url": "https://soberdrive.ru"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "RU"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Услуги трезвого водителя",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Трезвый водитель",
+          "description": "Профессиональный водитель за рулём вашего автомобиля. 0% комиссии."
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "0",
+          "priceCurrency": "RUB",
+          "valueAddedTaxIncluded": false
         }
-    }
-    </script>
+      }
+    ]
+  }
+}
+</script>
 </head>
 <body>
     <div class="card">
