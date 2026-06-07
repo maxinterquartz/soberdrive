@@ -280,6 +280,46 @@
             margin-bottom: 0;
         }
         
+        /* Стили для спиннера */
+        #landing-loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #1a2632;
+            z-index: 9999;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .loader-spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            border-top: 4px solid #27a7e7;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        .loader-text {
+            color: white;
+            font-size: 1.2rem;
+        }
+        
+        .loader-subtext {
+            color: #a3c6e0;
+            font-size: 0.9rem;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
         @media (max-width: 480px) {
             .card {
                 padding: 28px 20px;
@@ -348,7 +388,7 @@
         <div class="subhead">За рулём вашего автомобиля...</div>
         <br>
         <div class="button-wrapper">
-            <a href="https://soberdrive.containerapps.ru/" class="main-button">
+            <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/')" class="main-button">
                 Узнать стоимость
             </a>
         </div>
@@ -398,26 +438,26 @@
         <div class="cities-tags">
             <div class="cities-title">📍 Перегон во всех регионах</div>
             <div class="tags-wrapper">
-                <a href="https://soberdrive.containerapps.ru/order" class="city-tag">Москва МО</a>
-                <a href="https://soberdrive.containerapps.ru/order" class="city-tag">Санкт-Петербург</a>
-                <a href="https://soberdrive.containerapps.ru/order" class="city-tag">Новосибирск</a>
-                <a href="https://soberdrive.containerapps.ru/order" class="city-tag">Екатеринбург</a>
-                <a href="https://soberdrive.containerapps.ru/order" class="city-tag">Казань</a>
-                <a href="https://soberdrive.containerapps.ru/order" class="city-tag">Красноярск</a>
-                <a href="https://soberdrive.containerapps.ru/order" class="city-tag">Нижний Новгород</a>
-                <a href="https://soberdrive.containerapps.ru/order" class="city-tag">Челябинск</a>
-                <a href="https://soberdrive.containerapps.ru/order" class="city-tag">Краснодар</a>
-                <a href="https://soberdrive.containerapps.ru/order" class="city-tag">Уфа</a>
-                <a href="https://soberdrive.containerapps.ru/order" class="city-tag">Самара</a>
-                <a href="https://soberdrive.containerapps.ru/order" class="city-tag">Ростов-на-Дону</a>
-                <a href="https://soberdrive.containerapps.ru/order" class="city-tag">Омск</a>
-                <a href="https://soberdrive.containerapps.ru/order" class="city-tag">Пермь</a>
-                <a href="https://soberdrive.containerapps.ru/order" class="city-tag">Волгоград</a>
-                <a href="https://soberdrive.containerapps.ru/order" class="city-tag">Воронеж</a>
-                <a href="https://soberdrive.containerapps.ru/order" class="city-tag">Владивосток</a>
-                <a href="https://soberdrive.containerapps.ru/order" class="city-tag">Калининград</a>
-                <a href="https://soberdrive.containerapps.ru/order" class="city-tag">Сочи</a>
-                <a href="https://soberdrive.containerapps.ru/order" class="city-tag">+ Своя локация</a>
+                <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/order')" class="city-tag">Москва МО</a>
+                <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/order')" class="city-tag">Санкт-Петербург</a>
+                <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/order')" class="city-tag">Новосибирск</a>
+                <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/order')" class="city-tag">Екатеринбург</a>
+                <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/order')" class="city-tag">Казань</a>
+                <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/order')" class="city-tag">Красноярск</a>
+                <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/order')" class="city-tag">Нижний Новгород</a>
+                <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/order')" class="city-tag">Челябинск</a>
+                <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/order')" class="city-tag">Краснодар</a>
+                <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/order')" class="city-tag">Уфа</a>
+                <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/order')" class="city-tag">Самара</a>
+                <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/order')" class="city-tag">Ростов-на-Дону</a>
+                <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/order')" class="city-tag">Омск</a>
+                <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/order')" class="city-tag">Пермь</a>
+                <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/order')" class="city-tag">Волгоград</a>
+                <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/order')" class="city-tag">Воронеж</a>
+                <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/order')" class="city-tag">Владивосток</a>
+                <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/order')" class="city-tag">Калининград</a>
+                <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/order')" class="city-tag">Сочи</a>
+                <a href="javascript:void(0)" onclick="smartRedirect('https://soberdrive.containerapps.ru/order')" class="city-tag">+ Своя локация</a>
             </div>
         </div>
         
@@ -428,5 +468,36 @@
             Sober Drive 0° — народная биржа трезвых водителей
         </div>
     </div>
+
+    <!-- СПИННЕР ПРИ ЗАГРУЗКЕ КОНТЕЙНЕРА -->
+    <div id="landing-loader">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">Запуск сервера...</div>
+        <div class="loader-subtext">Пожалуйста, подождите 5-10 секунд</div>
+    </div>
+
+    <script>
+        function smartRedirect(url) {
+            const loader = document.getElementById('landing-loader');
+            loader.style.display = 'flex';
+            
+            // Пытаемся разбудить контейнер через healthz
+            fetch('https://soberdrive.containerapps.ru/healthz', { 
+                method: 'GET',
+                mode: 'cors',
+                cache: 'no-store'
+            })
+            .then(() => {
+                // Сервер проснулся (или уже был активен)
+                window.location.href = url;
+            })
+            .catch(() => {
+                // Если ошибка — всё равно редиректим через 2 секунды
+                setTimeout(() => {
+                    window.location.href = url;
+                }, 2000);
+            });
+        }
+    </script>
 </body>
 </html>
