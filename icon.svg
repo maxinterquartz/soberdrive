@@ -1,76 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   width="800"
-   height="800"
-   viewBox="0 0 211.66667 211.66666"
-   version="1.1"
-   id="svg1"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:dc="http://purl.org/dc/elements/1.1/">
-  <title
-     id="title1">SoberDrive 0° | Трезвый водитель</title>
-  <defs
-     id="defs1">
-    <linearGradient
-       id="swatch8">
-      <stop
-         style="stop-color:#1480b6;stop-opacity:1;"
-         offset="0"
-         id="stop8" />
-    </linearGradient>
-    <linearGradient
-       xlink:href="#swatch8"
-       id="linearGradient8"
-       x1="39.380789"
-       y1="104.21881"
-       x2="178.36984"
-       y2="104.21881"
-       gradientUnits="userSpaceOnUse" />
-  </defs>
-  <g
-     id="layer1"
-     style="display:inline">
-    <text
-       xml:space="preserve"
-       style="font-size:160.867px;font-family:C059;-inkscape-font-specification:'C059 Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#0052d0;fill-opacity:1;stroke-width:0.265;stroke-dasharray:none;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
-       x="109.51875"
-       y="159.6375"
-       id="text1"><tspan
-         id="tspan1"
-         style="fill:#0052d0;fill-opacity:1;stroke-width:0.265;stroke-dasharray:none;-inkscape-font-specification:'C059 Bold';font-family:C059;font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal"
-         x="109.51875"
-         y="159.6375">0°</tspan></text>
-  </g>
-  <metadata
-     id="metadata1">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:title>SoberDrive 0° | Трезвый водитель</dc:title>
-        <dc:creator>
-          <cc:Agent>
-            <dc:title>Трезвый водитель Максим</dc:title>
-          </cc:Agent>
-        </dc:creator>
-        <dc:subject>
-          <rdf:Bag>
-            <rdf:li>Трезвый</rdf:li>
-            <rdf:li>водитель</rdf:li>
-            <rdf:li>услуга</rdf:li>
-          </rdf:Bag>
-        </dc:subject>
-        <dc:coverage>Мир, Россия, Москва, Санкт-Петербург, Можайск, Текстильщики</dc:coverage>
-        <dc:description>Лого для сайта soberdrive.ru</dc:description>
-        <dc:date>2026</dc:date>
-        <dc:language>русский</dc:language>
-        <dc:source>soberdrive.ru</dc:source>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+	<title>SoberDrive 0° | Трезвый водитель</title>
+	<circle cx="256" cy="256" r="256" fill="#F4F7FC"/>
+	<g fill="#0052d0" transform="translate(3, -10) scale(2.49, 2.48)">
+		<path d="m 77.345431,45.743658 c -24.130051,0 -41.825421,24.612652 -41.825421,58.072992 0,33.46033 17.69537,58.07299 41.825421,58.07299 23.647449,0 41.664549,-24.61266 41.664549,-57.26866 0,-18.982305 -4.3434,-32.977734 -13.83456,-44.881893 C 97.614673,50.569668 88.12352,45.743658 77.345431,45.743658 Z m -0.160867,8.365084 c 4.82601,0 8.686818,2.895606 10.456355,8.04335 2.091271,5.308611 3.378207,22.199647 3.378207,42.147158 0,16.5693 -1.286936,33.94294 -2.734739,39.41241 -1.769537,6.43468 -5.630345,9.81289 -11.099823,9.81289 -4.986877,0 -8.686819,-2.73474 -10.617223,-8.04335 -2.091271,-5.30861 -3.378207,-22.36051 -3.378207,-41.66455 0,-16.891039 1.286936,-34.425543 2.734739,-39.895021 1.769537,-6.43468 5.630346,-9.812887 11.260691,-9.812887 z m 79.146466,-4.82601 c -13.99543,0 -24.77352,10.778089 -24.77352,24.451785 0,13.995429 10.61723,24.773518 24.13005,24.773518 13.51283,0 24.13005,-10.778089 24.13005,-24.612651 0,-13.834563 -10.29548,-24.612652 -23.48658,-24.612652 z m -0.32173,9.169419 c 8.04335,0 14.6389,6.917281 14.6389,15.443233 0,8.686818 -6.59555,15.443232 -14.96064,15.443232 -8.36508,0 -15.12149,-6.917281 -15.12149,-15.282365 0,-8.847686 6.75641,-15.6041 15.44323,-15.6041 z"/>
+	</g>
 </svg>
